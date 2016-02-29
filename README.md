@@ -12,7 +12,7 @@ Steps to run:
 
 import com.redhat.brms.model.Person;
 
-<code>
+{code}
 rule "MyAgeVerification"
 	dialect "mvel"
 	no-loop true
@@ -24,14 +24,14 @@ rule "MyAgeVerification"
 		}
 		System.out.println("Verified person is 21 years or older.");
 end
-</code>
+{code}
 
 
 4.  Follow the BRMS documentation to build and deploy this project.
 
 5.  Create a KIE container for the Decision Server and a container for the project.  This is outlined in the BRMS documentation but also be sure to add the following System Properties to your standalone.xml for the BRMS server.  Some of these values are dependent on how you created your container.  Also, be sure to add an app user to the server with the role of kie-server.  If you are a Red Hat customer, this is documented in the KB article https://access.redhat.com/solutions/2106041.
 
-<pre>
+{code:xml}
 <system-properties>
         <property name="org.kie.server.repo" value="${jboss.server.data.dir}"/>
         <property name="org.kie.example" value="true"/>
@@ -45,7 +45,7 @@ end
         <property name="org.jbpm.server.ext.disabled" value="true"></property>
         <property name="org.kie.server.id" value="myKieServer"></property>
     </system-properties>
-</pre>
+{code:xml}
     
 6.  With the BRMS 6.2 Decision Server configured with the deployed project, you can run a 'mvn test' to the decisionserver-request.  You can change the property values within the pom.xml to get different results.  For example, you can change the age as well as what payload to use:  JSON, XSTREAM, or JAXB.
 
