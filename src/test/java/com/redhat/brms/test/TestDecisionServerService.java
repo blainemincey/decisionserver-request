@@ -70,6 +70,6 @@ public class TestDecisionServerService {
     	}
     	
     	assertEquals(Boolean.TRUE, result.getApproved());
-	}
+    }
 
 }
