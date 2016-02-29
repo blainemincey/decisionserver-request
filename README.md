@@ -12,7 +12,7 @@ Steps to run:
 
 import com.redhat.brms.model.Person;
 
-{code}
+{code:java}
 rule "MyAgeVerification"
 	dialect "mvel"
 	no-loop true
@@ -24,7 +24,7 @@ rule "MyAgeVerification"
 		}
 		System.out.println("Verified person is 21 years or older.");
 end
-{code}
+{code:java}
 
 
 4.  Follow the BRMS documentation to build and deploy this project.
