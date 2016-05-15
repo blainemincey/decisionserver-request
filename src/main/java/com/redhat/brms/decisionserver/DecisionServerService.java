@@ -7,6 +7,7 @@ import org.drools.core.runtime.impl.ExecutionResultImpl;
 
 import org.kie.api.KieServices;
 
+import org.drools.core.command.runtime.rule.AgendaGroupSetFocusCommand;
 import org.kie.api.command.BatchExecutionCommand;
 import org.kie.api.command.Command;
 import org.kie.api.command.KieCommands;
@@ -109,6 +110,8 @@ public class DecisionServerService {
 
         /** batch the commands to be sent */
         List<Command<?>> commands = new ArrayList<Command<?>>();
+        AgendaGroupSetFocusCommand agendaGroup = new AgendaGroupSetFocusCommand("MyAgendaGroup");
+        commands.add(agendaGroup);
         BatchExecutionCommand batchExecution = cf.newBatchExecution( commands, KIE_SESSION );
         
         /** fact handle */
