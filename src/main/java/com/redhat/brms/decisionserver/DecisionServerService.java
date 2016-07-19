@@ -43,11 +43,11 @@ public class DecisionServerService {
 	 * role of kie-server.
 	 */
     private static final String SERVER_URL = "http://localhost:8080/kie-server/services/rest/server";
-    private static final String USER_NAME  = "kieServerUser";
-    private static final String USER_PWD   = "CHANGEME";
+    private static final String USER_NAME  = "kieserver";
+    private static final String USER_PWD   = "kieserver1!";
 
     /** Name of the container that was created in the Decision Server/BRMS. **/
-    private static final String CONTAINER_ID = "MyProject";
+    private static final String CONTAINER_ID = "MyContainer";
     private static final String KIE_SESSION  = "defaultStatelessKieSession";
     
     /** handle for returned object from decision server */

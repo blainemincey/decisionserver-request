@@ -16,7 +16,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- Red Hat JBoss BRMS BPMSuite dependency versions -->
-		<version.redhat.jboss.brms>6.3.0.Final-redhat-5</version.redhat.jboss.brms>
+		<version.redhat.jboss.brms>6.4.0.Final-redhat-3</version.redhat.jboss.brms>
 
 		<!-- Other dependency/plugin versions -->
 		<version.junit>4.11</version.junit>
@@ -84,12 +84,12 @@
 								<property>
 									<!-- Value can be either XSTREAM or JSON or JAXB (XML) -->
 									<name>MarshallingFormat</name>
-									<value>JSON</value>
+									<value>XSTREAM</value>
 								</property>
 								<property>
 									<!-- Value should be either < 21 or >=21 -->
 									<name>PersonAge</name>
-									<value>21</value>
+									<value>22</value>
 								</property>
 							</systemProperties>
 						</configuration>
